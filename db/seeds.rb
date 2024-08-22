@@ -7,19 +7,23 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-d1 = Doctor.create(name: "Estranho 2")
-d2 = Doctor.create(name: "Banner 2")
+# d1 = Doctor.create(name: "Estranho 2")
+# d2 = Doctor.create(name: "Banner 2")
 
-p1 = Patient.create(name: "João")
-p2 = Patient.create(name: "Maria")
+# p1 = Patient.create(name: "João")
+# p2 = Patient.create(name: "Maria")
 
-Appointment.create(doctor: d1, patient: p1, date: Date.today)
-Appointment.create(doctor: d2, patient: p2, date: Date.today)
-Appointment.create(doctor: d1, patient: p2, date: Date.today)
-Appointment.create(doctor: d2, patient: p1, date: Date.today)
+# Appointment.create(doctor: d1, patient: p1, date: Date.today)
+# Appointment.create(doctor: d2, patient: p2, date: Date.today)
+# Appointment.create(doctor: d1, patient: p2, date: Date.today)
+# Appointment.create(doctor: d2, patient: p1, date: Date.today)
 
-s1 = Supplier.create(name: "Diego")
+# s1 = Supplier.create(name: "Diego")
 
-a1 = Account.create(number: 144, supplier: s1)
+# a1 = Account.create(number: 144, supplier: s1)
 
-AccountHistory.create(date: Date.today, account: a1)
+# AccountHistory.create(date: Date.today, account: a1)
+
+s1 = Student.create(name: "Noob")
+
+t1 = Teacher.create(name: "Diego")
